@@ -8,8 +8,19 @@
   height: 80px;
   align-items: center;
 }
-
 .topNavLeft {
+  width: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+.topNavRight {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+a {
+  margin-right: 10px;
+  margin-left: 10px;
 }
