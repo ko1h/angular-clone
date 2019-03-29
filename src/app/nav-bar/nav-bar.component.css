@@ -1,0 +1,15 @@
+.topNavColumn {
+  width: 100%;
+}
+.topNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.topNavLeft {
+  display: flex;
+  flex-direction: row;
+}
