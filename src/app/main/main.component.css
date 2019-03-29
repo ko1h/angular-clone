@@ -45,6 +45,17 @@
 a {
   margin-right: 10px;
   margin-left: 10px;
+  color: gray;
+}
+
+a:visited
+{
+    text-decoration: none;
+    decoration: none;
+}
+
+a:hover {
+    text-decoration: underline #b70038;
 }
 
 .essentials {
