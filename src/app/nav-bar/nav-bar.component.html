@@ -1,15 +1,35 @@
-<div class="topNavColumn">
-  <div class="topNav">
+<div class="navbar navbar-expand navbar fixed-top" id="top-nav-menu">
+  <div class="container-fluid">
     <div class="topNavLeft">
-      <div class="logo">
-        //logo//
-      </div>
-      <input type="text" placeholder="Search..">
+      <a class="navbar-brand" href="#">ZAGAT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
     <div class="topNavRight">
-      <a href="#">THE LATEST</a>
-      <a href="#">CITY BEST</a>
-      <a href="#">PORTLAND</a>
+      <ul class="nav navbar-nav" id="top-nav">
+        <li class="active">
+          <a class="nav-link navbar-right" href="#">THE LASTEST</a>
+        </li>
+        <li class="navbar-right">
+          <a class="nav-link" href="#">CITY'S BEST</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
+            Portland
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Portland</a>
+            <a class="dropdown-item" href="#">Seattle</a>
+            <a class="dropdown-item" href="#">Atlanta</a>
+            <a class="dropdown-item" href="#">Austi</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

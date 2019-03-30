@@ -21,7 +21,6 @@
 #food {
   height: 400px;
   width: 100%;
-  opacity: .8;
 }
 .portland {
   display: flex;
@@ -41,7 +40,9 @@
   justify-content: center;
   padding: 10px;
 }
-
+.divMain>a {
+  color: white;
+}
 a {
   margin-right: 10px;
   margin-left: 10px;
@@ -58,25 +59,52 @@ a:hover {
     text-decoration: underline #b70038;
 }
 
-.essentials {
+.theLastest {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.lastestRow {
   display: flex;
   flex-direction: row;
-  max-width: 80%;
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
 }
-.card {
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+/* .card {
   margin: 0 10px;
 }
-.card>img {
-  height: 70%;
+.card>img{
+  width: 50px;
+} */
+.titleLastest{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-.topGuide {
-  display: flex;
-  flex-direction: row;
-  max-width: 80%;
-  width: 60%;
-  margin: 0 auto;
+.fancy {
   text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  border-bottom: 1px solid black;
+  top: 0;
+  width: 100px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
 }
