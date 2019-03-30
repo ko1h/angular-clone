@@ -1,11 +1,11 @@
-.mainArea {
+/* .mainArea {
   height: 100%;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 .mainHeader{
   width: 100%;
   height: 400px;
@@ -30,9 +30,7 @@
   position: absolute;
   color: white;
 }
-.container {
-  text-align: center;
-}
+
 
 .divMain {
   display: flex;
@@ -59,30 +57,21 @@ a:hover {
     text-decoration: underline #b70038;
 }
 
-.theLastest {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-}
-.lastestRow {
-  display: flex;
-  flex-direction: row;
-}
 .mainCard {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 50px;
 }
-/* .card {
+.card {
   margin: 0 10px;
 }
 .card>img{
   width: 50px;
-} */
+}
 .titleLastest{
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
 }
 .fancy {
   text-align: center;
@@ -107,4 +96,25 @@ a:hover {
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
+}
+.lastRowCol {
+  display: flex;
+  flex-direction: column;
+}
+.lastestRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.moreButton {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  text-align: center;
+  a{
+    border: 2px solid #b70038;
+    color: #b70038;
+    padding: 10px 80px;
+  }
 }

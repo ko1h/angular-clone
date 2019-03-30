@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  height: 665px;
+  display: flex;
+  flex-direction: row;
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+  .zagatCities {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  a {
+    color: black;
+    padding: 5px;
+  }
+}
