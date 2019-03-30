@@ -3,19 +3,39 @@
   height: 665px;
   display: flex;
   flex-direction: row;
-
-  .about {
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.zagatCities {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+  .header {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-  }
-  .zagatCities {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+    flex-direction: row;
+    margin: 30px 30px 20px;
+}
+  .list {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   height: 450px;
+   margin: 0px 30px;
   }
   a {
     color: black;
     padding: 5px;
+  }
+  a:visited
+  {
+      text-decoration: none;
+      decoration: none;
+  }
+  a:hover {
+      color: #b70038;
+      text-decoration: none;
   }
 }
