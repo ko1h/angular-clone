@@ -17,7 +17,6 @@ export class AdminComponent implements OnInit {
     submitForm(image: string, title: string) {
       var newCard: Card = new Card(image, title);
       this.cardService.addCard(newCard);
-      console.log(newCard);
     }
 
 }

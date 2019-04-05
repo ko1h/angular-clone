@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { AdminComponent } from './admin/admin.component';
 import { routing } from './app.routing';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     MainComponent,
     FooterComponent,
     SubscribeComponent,
-    AdminComponent
+    AdminComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
