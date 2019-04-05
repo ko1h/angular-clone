@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Card } from '../card.model';
 import { CardService } from '../card.service';
 
+
 @Component({
   selector: 'app-card-detail',
   templateUrl: './card-detail.component.html',
@@ -24,7 +25,7 @@ export class CardDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
      this.cardId = parseInt(urlParameters['id']);
    });
-   // this.cardToDisplay = this.cardService.getCardId(this.cardId);
+   this.cardToDisplay = this.cardService.getCardId(this.cardId);
   }
 
 }

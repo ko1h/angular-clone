@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { Card } from '../card.model';
 import { Router } from '@angular/router';
 import { CardService } from '../card.service';
-import { Card } from '../card.model';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-welcome',
@@ -12,15 +12,15 @@ import { Card } from '../card.model';
 })
 export class WelcomeComponent implements OnInit {
   cards: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
-
-  goToDetailPage(clickedCard: Card) {
-    // this.router.navigate(['cards', clickedCard.id]);
-  };
-
-  constructor() { }
+  constructor(private router: Router, private cardService: CardService) { }
 
   ngOnInit() {
+     this.cards = this.cardService.getCards();
+  }
+  goToDetailPage(clickedCard: Card) {
+    // this.router.navigate(['cards', clickedCard.id]);
   }
 
 }
