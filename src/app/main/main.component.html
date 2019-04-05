@@ -57,6 +57,12 @@
           </div>
         </div>
       </div>
+      <h2>Marketplace</h2>
+      <div *ngFor="let card of cards | async" (click)="goToDetailPage(card)" class="panel panel-default">
+        <div class="panel-body">
+          <h3><em>{{card.title}}</em> by {{card.image}}</h3>
+        </div>
+      </div>
     </div>
     <div class="moreButton">
       <a href="#">MORE</a>
