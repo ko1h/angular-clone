@@ -7,9 +7,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 //Frontend Component
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CardComponent } from './card/card.component';
-import { FooterComponent } from './footer/footer.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { AdminComponent } from './admin/admin.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -27,9 +25,7 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     CardComponent,
-    FooterComponent,
     SubscribeComponent,
     AdminComponent,
     WelcomeComponent,
@@ -39,7 +35,9 @@ export const firebaseConfig = {
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
