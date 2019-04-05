@@ -22,46 +22,9 @@
     <p>IN PORTLAND</p>
   </div>
   <div class="lastRowCol">
-    <div class="lastestRow">
-      <div class="leftCard">
-        <div class="card">
-          <img class="card-img-top"src="../assets/img/ramen.jpeg" alt="ramen" style="width:100%">
-          <div class="card-body">
-            <h5><a  href="#">Best Restaurants in Portland</a></h5>
-            <p class="card-text">July 13, 2018</p>
-          </div>
-        </div>
-      </div>
-      <div class="middleCard">
-        <div class="card">
-          <img class="card-img-top"src="../assets/img/ramen.jpeg" alt="ramen" style="width:100%">
-          <div class="card-body">
-            <h5><a  href="#">Best Restaurants in Portland</a></h5>
-            <p class="card-text">July 13, 2018</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top"src="../assets/img/ramen.jpeg" alt="ramen" style="width:100%">
-          <div class="card-body">
-            <h5><a  href="#">Best Restaurants in Portland</a></h5>
-            <p class="card-text">July 13, 2018</p>
-          </div>
-        </div>
-      </div>
-      <div class="rightcard">
-        <div class="card">
-          <img class="card-img-top"src="../assets/img/ramen.jpeg" alt="ramen" style="width:100%">
-          <div class="card-body">
-            <h5><a  href="#">Best Restaurants in Portland</a></h5>
-            <p class="card-text">July 13, 2018</p>
-          </div>
-        </div>
-      </div>
-      <h2>Marketplace</h2>
-      <div *ngFor="let card of cards | async" (click)="goToDetailPage(card)" class="panel panel-default">
-        <div class="panel-body">
-          <h3><em>{{card.title}}</em> by {{card.image}}</h3>
-        </div>
+    <div *ngFor="let card of cards | async" (click)="goToDetailPage(card)" class="panel panel-default">
+      <div class="panel-body">
+        <h3><em>{{card.title}}</em> by {{card.image}}</h3>
       </div>
     </div>
     <div class="moreButton">
