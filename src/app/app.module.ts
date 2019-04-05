@@ -15,6 +15,7 @@ import { TheLastestComponent } from './the-lastest/the-lastest.component';
 import { CityBestComponent } from './city-best/city-best.component';
 import { routing } from './app.routing';
 import { CardDetailComponent } from './card-detail/card-detail.component';
+import { EditCardComponent } from './edit-card/edit-card.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     TheLastestComponent,
     CityBestComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    EditCardComponent
   ],
   imports: [
     BrowserModule,

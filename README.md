@@ -12,6 +12,7 @@
 
 * _Use command line to clone repository_
 * _Github link https://github.com/ko1h/angular-clone.git
+* _npm install_
 * _User will need to create an project and then create an key from firebase_
 * _create a new file name api-keys.ts at the top level of your directory._
 * _Don't forget to add api key in gitignore file__
@@ -26,7 +27,7 @@ _If you are having issues you can contact us at kohichi.horii@gmail.com_
 
 ## Technologies Used
 
-_Javascript, Node, Jasmine, Karma, HTML, CSS, Git, jQuery, bootstrap, ES6_
+_Javascript, Node, angular, HTML, CSS, Git, jQuery, bootstrap, ES6_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 

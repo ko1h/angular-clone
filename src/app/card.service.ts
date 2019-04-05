@@ -16,11 +16,18 @@ export class CardService {
  addCard(newCard: Card) {
    this.cards.push(newCard);
  }
- getCardId(CardId: number){
-    // for (var i = 0; i <= CARDS.length - 1; i++) {
-    //   if (CARDS[i].id === cardId) {
-    //     return CARDS[i];
-    //   }
-    // }
+ getCardId(cardId: string){
+  return this.database.object('/cards/' + cardId);
+  }
+    updateCard(localUpdatedCard){
+    var cardEntryInFirebase = this.getCardId(localUpdatedCard.$key);
+    console.log(cardEntryInFirebase);
+    cardEntryInFirebase.update({title: localUpdatedCard.title,
+                                artist: localUpdatedCard.artist,
+                                description: localUpdatedCard.description});
+  }
+  deleteCard(localCardToDelete){
+   var cardEntryInFirebase = this.getCardId(localCardToDelete.$key);
+   cardEntryInFirebase.remove();
   }
 }

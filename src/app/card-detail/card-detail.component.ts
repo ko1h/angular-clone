@@ -13,7 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
   providers: [CardService]
 })
 export class CardDetailComponent implements OnInit {
-  cardId: number;
+  cardId: string;
   cardToDisplay;
 
   constructor(
@@ -24,7 +24,7 @@ export class CardDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.cardId = parseInt(urlParameters['id']);
+     this.cardId = urlParameters['id'];
    });
    this.cardToDisplay = this.cardService.getCardId(this.cardId);
   }

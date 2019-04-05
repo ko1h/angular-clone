@@ -1,0 +1,12 @@
+<h4>Edit Card</h4>
+
+<label>New Card Image:</label>
+<input [(ngModel)]="selectedCard.image">
+<br>
+
+<label>New Card Title:</label>
+<input [(ngModel)]="selectedCard.title">
+
+<button (click)="beginUpdatingCard(selectedCard)">Update</button>
+<hr>
+<button (click)="beginDeletingCard(selectedCard)">Delete</button>
