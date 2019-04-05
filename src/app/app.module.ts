@@ -15,6 +15,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
 import { AdminComponent } from './admin/admin.component';
 import { routing } from './app.routing';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { TheLastestComponent } from './the-lastest/the-lastest.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     FooterComponent,
     SubscribeComponent,
     AdminComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TheLastestComponent
   ],
   imports: [
     BrowserModule,
