@@ -9,7 +9,6 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CardComponent } from './card/card.component';
-import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { AdminComponent } from './admin/admin.component';
@@ -30,7 +29,6 @@ export const firebaseConfig = {
     AppComponent,
     NavBarComponent,
     CardComponent,
-    MainComponent,
     FooterComponent,
     SubscribeComponent,
     AdminComponent,

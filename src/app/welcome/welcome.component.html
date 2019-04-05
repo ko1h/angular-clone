@@ -1,1 +1,35 @@
-<h2>Welcome to our store!</h2>
+<div class="container">
+  <div class="mainArea">
+    <div class="mainHeader">
+      <div class="foodImg">
+        <img id="food" src="../assets/img/food.jpg" alt="door">
+      </div>
+      <div class="portland">
+        <!-- art logo -->
+        <h2>City's Best: Portland </h2>
+        <p>FROM THE TOP SPOTS TO LOCAL FAVORITE</p>
+        <div class="divMain">
+          <a href="#">THE ESSENTIALS</a>
+          <a href="#">TOP GUIDES</a>
+          <a href="#">DISHES AND DRINKS</a>
+        </div>
+        <button type="button" name="button">VIEW THE GUIDE</button>
+      </div>
+    </div>
+  </div>
+  <div class="titleLastest">
+    <p class="fancy"><span>The Latest</span></p>
+    <p>IN PORTLAND</p>
+  </div>
+  <div class="lastRowCol">
+    <div *ngFor="let card of cards | async" (click)="goToDetailPage(card)" class="panel panel-default">
+      <div class="panel-body">
+        <h3><em>{{card.title}}</em> by {{card.image}}</h3>
+        <h1>{{card.$key}}</h1>
+      </div>
+    </div>
+    <div class="moreButton">
+      <a href="#">MORE</a>
+    </div>
+  </div>
+</div>
