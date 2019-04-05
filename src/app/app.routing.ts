@@ -5,9 +5,9 @@ import { TheLastestComponent } from './the-lastest/the-lastest.component';
 
 const appRoutes: Routes = [
   {
-    path: '',
-    component: WelcomeComponent
-  },
+   path: '',
+   component: WelcomeComponent
+ },
   {
   path: "the-lastest",
   component: TheLastestComponent
