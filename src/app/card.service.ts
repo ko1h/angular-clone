@@ -17,9 +17,9 @@ export class CardService {
    this.cards.push(newCard);
  }
  getCardId(CardId: number){
-    // for (var i = 0; i <= ALBUMS.length - 1; i++) {
-    //   if (ALBUMS[i].id === albumId) {
-    //     return ALBUMS[i];
+    // for (var i = 0; i <= CARDS.length - 1; i++) {
+    //   if (CARDS[i].id === cardId) {
+    //     return CARDS[i];
     //   }
     // }
   }
