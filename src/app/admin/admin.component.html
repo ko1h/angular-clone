@@ -1,3 +1,21 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Album to Inventory</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Card Image:</label>
+        <br>
+        <input #newImage>
+      </div>
+
+      <div>
+        <label>Card Tile:</label>
+        <br>
+        <input #newTitle>
+      </div>
+      <button (click)="submitForm(newImage.value, newTitle.value">Add</button>
+    </div>
+  </div>
+</div>
