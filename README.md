@@ -1,4 +1,32 @@
-# Gopro
+# _Zagat clone_
+
+#### _Clone project of the website Zagat Portland, 5 April 2019_
+
+#### _By Kohichi Horii_
+
+## Description
+
+* _The purpose of this project is to clone a website using angular_
+
+## Setup/Installation Requirements
+
+* _Use command line to clone repository_
+* _Github link https://github.com/ko1h/angular-clone.git
+* _User will need to create an project and then create an key from firebase_
+* _create a new file name api-keys.ts at the top level of your directory._
+* _Don't forget to add api key in gitignore file__
+
+## Known Bugs
+
+_No known bugs at this time._
+
+## Support and contact details
+
+_If you are having issues you can contact us at kohichi.horii@gmail.com_
+
+## Technologies Used
+
+_Javascript, Node, Jasmine, Karma, HTML, CSS, Git, jQuery, bootstrap, ES6_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -25,3 +53,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2019 **_KH_** MIT license.

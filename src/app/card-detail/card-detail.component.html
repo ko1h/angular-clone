@@ -1,4 +1,4 @@
 <div>
-  <h3>{{cardToDisplay.image}}</h3>
-  <h4>{{cardToDisplay.title}}</h4>
-</div>
+  <h3>{{(cardToDisplay | async)?.image}}</h3>
+  <h4>{{(cardToDisplay | async)?.title}}</h4>
+</div

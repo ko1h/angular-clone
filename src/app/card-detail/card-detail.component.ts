@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Card } from '../card.model';
 import { CardService } from '../card.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -13,7 +14,7 @@ import { CardService } from '../card.service';
 })
 export class CardDetailComponent implements OnInit {
   cardId: number;
-  cardToDisplay: Card;
+  cardToDisplay;
 
   constructor(
     private route: ActivatedRoute,
