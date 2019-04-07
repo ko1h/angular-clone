@@ -20,7 +20,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown">
-            Portland
+            {{cityToDisplay.name | uppercase}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Portland</a>
@@ -72,16 +72,11 @@
       <h3>ZAGAT CTIES</h3>
     </div>
     <div class="list">
-      <a href="#">Portland</a>
-      <a href="#">Seattle</a>
-      <a href="#">Atlanta</a>
-      <a href="#">Baltimore</a>
-      <a href="#">Boston</a>
-      <a href="#">Charleston</a>
-      <a href="#">Charlotte</a>
-      <a href="#">Chicago</a>
-      <a href="#">Cincinnati</a>
-      <a href="#">Cleveland</a>
+      <ul>
+        <li *ngFor="let city of childCityList" (click)="goToCityPage(city)">
+          <p><span  href="#">{{city.name}}</span></p>
+        </li>
+      </ul>
     </div>
   </div>
   <a routerLink="admin">Admin</a>

@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Card } from './card.model';
 import { CARDS } from './mock-card';
+import { City } from './card.model';
+import { CITIES } from './mock-city-data';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
+
 export class CardService {
-   cards: FirebaseListObservable<any[]>;
+  cards: FirebaseListObservable<any[]>;
 
    constructor(private database: AngularFireDatabase) {
   this.cards = database.list('cards');
@@ -30,4 +33,15 @@ export class CardService {
    var cardEntryInFirebase = this.getCardId(localCardToDelete.$key);
    cardEntryInFirebase.remove();
   }
+  getCities() {
+  return CITIES;
+  }
+  getCityByName(cityName: string) {
+    for (let i=0; i< CITIES.length; i++) {
+      if (CITIES[i].name === cityName) {
+        return CITIES[i];
+      }
+    }
+  }
+
 }
