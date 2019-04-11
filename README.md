@@ -8,6 +8,19 @@
 
 * _The purpose of this project is to clone a website using angular_
 
+## live Demo
+* _https://zagat-store.firebaseapp.com_
+
+## Features
+* _Hover over an links and links will change to red_
+* _Project is linked to firebase_
+* _Project show data from firebase in welcome page_
+* _User can go to admin page to add new data to firebase_
+
+## Stretch Goals
+* _User will be able to update each card with an image and welcome page will use an grid_
+* _When user changes location the nav bar location will change_
+
 ## Setup/Installation Requirements
 
 * _Use command line to clone repository_
