@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-
-//Frontend Component
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//Frontend Component
+
 import { CardComponent } from './card/card.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { AdminComponent } from './admin/admin.component';

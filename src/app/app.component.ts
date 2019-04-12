@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { City } from './card.model';
-import { CardService } from './card.service';
 import { Router } from '@angular/router';
+import { CardService } from './card.service';
+import { Task } from './card.model';
 
 
 @Component({
@@ -12,29 +12,26 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
   providers: [CardService]
 })
-export class AppComponent  implements OnInit{
-  childCityList: City[];
-  cityName: string = null;
-  cityToDisplay: City;
 
-  constructor(private route: ActivatedRoute, private location: Location, private cardService: CardService, private router: Router) { }
+export class AppComponent  implements OnInit{
+  constructor() { }
 
  ngOnInit() {
-   this.childCityList = this.cardService.getCities();
 
+    }
+    selectedTask = null;
+    masterTaskList: Task[] = [
+      new Task('Finish weekend Angular homework for Epicodus course', 3),
+      new Task('Begin brainstorming possible JavaScript group projects', 2),
+      new Task('Add README file to last few Angular repos on GitHub', 2)
+    ];
 
-   this.route.params.forEach((urlParameters) => {
-     this.cityName = urlParameters['city'];
-     if (this.cityToDisplay) {
-       this.cityToDisplay = this.cardService.getCityByName(this.cityName)
-     } else {
-       this.cityToDisplay = this.cardService.getCityByName('Portland')
-     }
-   });
- }
- goToCityPage(clickedCity: City) {
-   this.router.navigate([clickedCity.name]);
+    editTask(clickedTask) {
+      this.selectedTask = clickedTask;
+    }
 
- }
+    finishedEditing() {
+      this.selectedTask = null;
+    }
 
-}
+  }

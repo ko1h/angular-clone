@@ -8,6 +8,12 @@
 
 * _The purpose of this project is to clone a website using angular_
 
+## Features
+* _User will need to create an project and then create an key from firebase_
+* _create a new file name api-keys.ts at the top level of your directory._
+* _Don't forget to add api key in gitignore file__
+
+
 ## Setup/Installation Requirements
 
 * _Use command line to clone repository_

@@ -30,5 +30,8 @@
     <div class="moreButton">
       <a href="#">MORE</a>
     </div>
+      <ul>
+        <li [class]="priorityColor(currentTask)" *ngFor="let currentTask of childTaskList">{{currentTask.description}} <button (click)="editTask(currentTask)">Edit!</button></li>
+      </ul>
   </div>
 </div>
