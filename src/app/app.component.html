@@ -64,7 +64,7 @@
       <a href="#">All Restaurants</a>
       <a href="#">Send Feedback</a>
       <a href="#">Careers</a>
-    
+
     </div>
   </div>
   <div class="zagatCities">
@@ -76,8 +76,7 @@
          <li [class]="priorityColor(currentTask)" *ngFor="let currentTask of tasks">{{currentTask.description}}  <button (click)="editTask()">Edit!</button></li>
        </ul>
     </div>
-    <h1>Welcome, {{userName}}!</h1>
-    <form>
+    <!-- <form>
       <input [(ngModel)]="userName" type="text" name="user">
     </form>
     <h3>{{selectedTask.description}}</h3>
@@ -89,7 +88,7 @@
     <br>
     <input type="radio" [(ngModel)]="selectedTask.priority" value="1">1 (Low Priority)<br>
     <input type="radio" [(ngModel)]="selectedTask.priority" value="2">2 (Medium Priority)<br>
-    <input type="radio" [(ngModel)]="selectedTask.priority" value="3">3 (High Priority)
+    <input type="radio" [(ngModel)]="selectedTask.priority" value="3">3 (High Priority) -->
   </div>
 
   <a routerLink="admin">Admin</a>

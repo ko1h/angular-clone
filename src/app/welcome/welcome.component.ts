@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CardService } from '../card.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Task } from '../card.model';
+import { CardComponent } from '../card/card.component';
 
 @Component({
   selector: 'app-welcome',
