@@ -22,13 +22,17 @@
     <p>IN PORTLAND</p>
   </div>
   <div class="lastRowCol">
-    <div *ngFor="let card of cards | async" (click)="goToDetailPage(card)" class="panel panel-default">
+    <app-card></app-card>
+    <!-- <div *ngFor="let card of cards | async" (click)="goToDetailPage(card)" class="panel panel-default">
       <div class="panel-body">
         <h3><em>{{card.image}}</em> by {{card.title}}</h3>
       </div>
-    </div>
+    </div> -->
     <div class="moreButton">
       <a href="#">MORE</a>
     </div>
+      <!-- <ul>
+        <li [class]="priorityColor(currentTask)" *ngFor="let currentTask of childTaskList">{{currentTask.description}} <button (click)="editTask(currentTask)">Edit!</button></li>
+      </ul> -->
   </div>
 </div>

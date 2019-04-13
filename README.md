@@ -8,6 +8,12 @@
 
 * _The purpose of this project is to clone a website using angular_
 
+
+## Features
+* _User will need to create an project and then create an key from firebase_
+* _create a new file name api-keys.ts at the top level of your directory._
+* _Don't forget to add api key in gitignore file__
+
 ## live Demo
 * _[Zagat clone](https://zagat-store.firebaseapp.com)_
 
@@ -20,6 +26,7 @@
 ## Stretch Goals
 * _User will be able to update each card with an image and welcome page will use an grid_
 * _When user changes location the nav bar location will change_
+>>>>>>> 607e1b5383a3b1e4f4ce746d12865d3be2b1a692
 
 ## Setup/Installation Requirements
 
