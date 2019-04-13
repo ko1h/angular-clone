@@ -8,19 +8,34 @@
 
 * _The purpose of this project is to clone a website using angular_
 
+
 ## Features
 * _User will need to create an project and then create an key from firebase_
 * _create a new file name api-keys.ts at the top level of your directory._
 * _Don't forget to add api key in gitignore file__
 
+## live Demo
+* _[Zagat clone](https://zagat-store.firebaseapp.com)_
+
+## Features
+* _Hover over an links and links will change to red_
+* _Project is linked to firebase_
+* _Project show data from firebase in welcome page_
+* _User can go to admin page to add new data to firebase_
+
+## Stretch Goals
+* _User will be able to update each card with an image and welcome page will use an grid_
+* _When user changes location the nav bar location will change_
+>>>>>>> 607e1b5383a3b1e4f4ce746d12865d3be2b1a692
 
 ## Setup/Installation Requirements
 
 * _Use command line to clone repository_
-* _Github link https://github.com/ko1h/angular-clone.git
+* _Github link [Github Repo](https://github.com/ko1h/angular-clone.git)_
 * _npm install_
 * _User will need to create an project and then create an key from firebase_
 * _create a new file name api-keys.ts at the top level of your directory._
+* _Inside this file copy and past this export const masterFirebaseConfig = { apiKey: "xxxx", authDomain: "xxxx.firebaseapp.com", databaseURL: "https://xxxx.firebaseio.com", storageBucket: "xxxx.appspot.com", messagingSenderId: "xxxx" };_s_
 * _Don't forget to add api key in gitignore file__
 
 ## Known Bugs
